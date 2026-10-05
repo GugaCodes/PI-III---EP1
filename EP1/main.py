@@ -53,7 +53,7 @@ class Aplicativo(ctk.CTk):
         # 2 - Tempo
         quadro_tempo = ctk.CTkFrame(area_principal, corner_radius=12)
         quadro_tempo.grid(row=0, column=1, padx=(5, 10), pady=(10, 5), sticky="nsew")
-        titulo_tempo = ctk.CTkLabel(quadro_tempo, text = "Tempo de Execução", font = ctk.CTkFont(size=20,weight="bold"))
+        titulo_tempo = ctk.CTkLabel(quadro_tempo, text = "Erro", font = ctk.CTkFont(size=20,weight="bold"))
         titulo_tempo.pack(pady=5)
 
         canvas_tempo = FigureCanvasTkAgg(figura_tempo, master=quadro_tempo)
@@ -63,7 +63,7 @@ class Aplicativo(ctk.CTk):
         # 3 - Erro
         quadro_erro = ctk.CTkFrame(area_principal, corner_radius=12)
         quadro_erro.grid(row=1, column=0, padx=(10, 5), pady=(5, 10), sticky="nsew")
-        titulo_erro = ctk.CTkLabel(quadro_erro, text = "Erro", font = ctk.CTkFont(size=20,weight="bold"))
+        titulo_erro = ctk.CTkLabel(quadro_erro, text = "Tempo de Execução", font = ctk.CTkFont(size=20,weight="bold"))
         titulo_erro.pack(pady=5)
 
         canvas_erro = FigureCanvasTkAgg(figura_erro, master=quadro_erro)
